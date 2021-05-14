@@ -1,0 +1,86 @@
+/*
+  FONTS
+  Variables
+  General
+  Header
+  Main
+  Images
+  footer
+  Media Queries
+  Notes
+*/
+/*--------->FONTS<-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
+
+/*--------->Variables<-----------*/
+:root {
+  /*--dark: #;*/
+}
+
+/*--------->General Styles<-----------*/
+body {
+  background-color: var(--darkest-grey);
+  /*background-image: url(images/background-texture.jpg);*/
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  /*Max width for the main container*/
+  max-width: 100%;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main-content #search-bar{
+  width: 27%;
+  border-radius: 100px;
+  height: 4%;
+}
+
+
+/*--------->HEADER<-----------*/
+/*--------->Main<-----------*/
+#main-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+/*--------->Footer<-----------*/
+/*--------->Media Queries<-----------*/
+/*This rule is just for the projects to adapt to screen better*/
+@media (max-width: 1086px) {
+  .main-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  #main-content {}
+}
+
+@media (max-width: 640px) {
+
+}
+
+/*--------->NOTES<-----------*/
+/*
+- Para centrar algo horizontalmente en navegadores modernos, usa display:
+ flex; justify-content: center;
+
+- Sin embargo, en navegadores antiguos como IE8-9, flexbox no está disponible.
+Para poder centrar un elemento horizontalmente con respecto a su contenedor,
+usa margin: 0 auto;
+
+*/
