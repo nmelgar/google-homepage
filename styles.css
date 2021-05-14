@@ -19,12 +19,7 @@
 
 /*--------->General Styles<-----------*/
 body {
-  background-color: var(--darkest-grey);
-  /*background-image: url(images/background-texture.jpg);*/
-  color: var(--white);
-  font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
-  /*Max width for the main container*/
+  /*margin: 0 auto;*/
   max-width: 100%;
   text-align: center;
 }
@@ -33,19 +28,47 @@ body {
   width: 100%;
 }
 
-img {
+img .main-image{
   max-width: 100%;
   height: auto;
 }
 
-#main-content #search-bar{
+
+
+#main-content #search-bar {
   width: 27%;
   border-radius: 100px;
   height: 4%;
 }
 
-
 /*--------->HEADER<-----------*/
+.nav-bar {}
+
+.nav-bar ul {
+
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  padding: 0.5%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  margin: 0;
+  display: inline;
+}
+
+
+
+
+
 /*--------->Main<-----------*/
 #main-content {
   align-items: center;
@@ -65,14 +88,10 @@ img {
 }
 
 @media (max-width: 768px) {
-
-
   #main-content {}
 }
 
-@media (max-width: 640px) {
-
-}
+@media (max-width: 640px) {}
 
 /*--------->NOTES<-----------*/
 /*
