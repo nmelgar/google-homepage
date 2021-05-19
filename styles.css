@@ -22,6 +22,7 @@ body {
   /*margin: 0 auto;*/
   max-width: 100%;
   text-align: center;
+
 }
 
 .main-image {
@@ -59,7 +60,11 @@ img .main-image {
 .nav-bar a {
   text-decoration: none;
   display: inline;
+  color: #000;
+}
 
+.material-icons {
+  color: #5f6368;
 }
 
 .material-icons {
@@ -68,12 +73,19 @@ img .main-image {
   vertical-align: bottom;
 }
 
+.iniciar-sesion a{
+  color: #fff;
+  background: #2b7de9;
+  padding: 0.6em 1.5em;
+  border-radius: 5px;
+}
+
 /*--------->Main<-----------*/
 #main-content {
   align-items: center;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
 }
 
