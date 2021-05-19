@@ -22,26 +22,14 @@ body {
   /*margin: 0 auto;*/
   max-width: 100%;
   text-align: center;
-
 }
 
-.main-image {
-  width: 100%;
-}
-
-img .main-image {
-  max-width: 100%;
-  height: auto;
-}
-
+/*--------->HEADER<-----------*/
 #main-content #search-bar {
   width: 27%;
   border-radius: 100px;
   height: 4%;
 }
-
-/*--------->HEADER<-----------*/
-.nav-bar {}
 
 .nav-bar ul {
   display: flex;
@@ -73,7 +61,7 @@ img .main-image {
   vertical-align: bottom;
 }
 
-.iniciar-sesion a{
+.iniciar-sesion a {
   color: #fff;
   background: #2b7de9;
   padding: 0.6em 1.5em;
@@ -87,6 +75,26 @@ img .main-image {
   flex-flow: column;
   height: 90vh;
   justify-content: center;
+}
+
+img .main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-buttons{
+  display: flex;
+  padding: 1em;
+
+}
+
+.search-buttons a {
+  color: #000;
+  background: #dadce0;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0 0.5em 0 0;
+  text-decoration: none;
 }
 
 /*--------->Footer<-----------*/
