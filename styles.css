@@ -19,20 +19,22 @@
 
 /*--------->General Styles<-----------*/
 body {
-  /*margin: 0 auto;*/
-  max-width: 100%;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-
+  margin: 0;
 }
 
-#container{
-  margin-bottom: 0;
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
 }
 
 /*--------->HEADER<-----------*/
-header{
-    margin: 1em;
+header {
+  margin: 1em;
+  grid-row: 1/2;
+
 }
 
 .nav-bar ul {
@@ -73,12 +75,14 @@ header{
 }
 
 /*--------->Main<-----------*/
+main {
+grid-row: 4/9;
+}
+
 #main-content {
   align-items: center;
   display: flex;
   flex-flow: column;
-  height: 80vh;
-  justify-content: center;
 }
 
 img .main-image {
@@ -89,7 +93,6 @@ img .main-image {
 #main-content #search-bar {
   width: 27%;
   border-radius: 100px;
-  height: 4%;
 }
 
 input {
@@ -111,28 +114,28 @@ input {
 }
 
 /*--------->Footer<-----------*/
-footer{
-  margin: 0 auto;
+footer {
+grid-row: 9/10;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: grey;
 }
 
-footer .country{
+footer .country {
   display: block;
 }
 
-footer .about{
+footer .about {
   display: flex;
   flex-direction: row;
 }
 
-.about li{
+.about li {
   display: inline-block;
   text-decoration: none;
 }
-
 
 /*--------->Media Queries<-----------*/
 /*This rule is just for the projects to adapt to screen better*/
