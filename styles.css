@@ -47,12 +47,20 @@ header {
 
 .nav-bar ul li {
   display: inline-block;
-  padding: 0.5%;
+  padding: 0.8%;
 }
 
 .nav-bar a {
   color: #000;
   display: inline;
+  text-decoration: none;
+}
+
+.nav-bar li:not(:last-child) a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar a {
   text-decoration: none;
 }
 
@@ -64,6 +72,14 @@ header {
   font-size: 1.5em;
   /*This solves the problem to align the apps icon*/
   vertical-align: bottom;
+}
+
+ #apps a:hover {
+   border-radius: 50%;
+   background: #F2F2F2;
+   padding: 10px;
+  
+
 }
 
 .iniciar-sesion a {
@@ -91,7 +107,7 @@ img .main-image {
 
 #main-content #search-bar {
   border-radius: 100px;
-  width: 27%;
+  width: 35em;
   height: 40px;
 }
 
@@ -119,10 +135,9 @@ footer {
   display: flex;
   flex-direction: column;
   grid-row: 9/10;
-
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #6F6F6F;
   padding: 0 2em 0 0;
@@ -132,8 +147,6 @@ footer .country {
   align-items: flex-start;
   display: flex;
   margin-left: 2.5em;
-
-
 }
 
 footer .about {
@@ -142,7 +155,6 @@ footer .about {
   flex-direction: row;
   margin: 0;
   justify-content: space-between;
-
 }
 
 .about li {
@@ -157,13 +169,34 @@ footer .about {
     width: 100%;
     height: auto;
   }
+
+  footer .about {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
   #main-content {}
 }
 
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+  #main-content #search-bar {
+    width: 30em;
+  }
+}
+
+@media (max-width: 481px) {
+  #main-content #search-bar {
+    width: 27em;
+  }
+}
+
+@media (max-width: 385px) {
+  #main-content #search-bar {
+    width: 25em;
+  }
+}
 
 /*--------->NOTES<-----------*/
 /*
