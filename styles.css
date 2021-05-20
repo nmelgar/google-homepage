@@ -34,7 +34,6 @@ body {
 header {
   margin: 1em;
   grid-row: 1/2;
-
 }
 
 .nav-bar ul {
@@ -76,7 +75,7 @@ header {
 
 /*--------->Main<-----------*/
 main {
-grid-row: 4/9;
+  grid-row: 4/9;
 }
 
 #main-content {
@@ -115,12 +114,12 @@ input {
 
 /*--------->Footer<-----------*/
 footer {
-grid-row: 9/10;
+  grid-row: 9/10;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: grey;
+  background: #F2F2F2;
 }
 
 footer .country {
