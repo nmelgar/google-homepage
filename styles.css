@@ -68,18 +68,16 @@ header {
   color: #5f6368;
 }
 
-.material-icons {
+.material-icons .apps {
   font-size: 1.5em;
   /*This solves the problem to align the apps icon*/
   vertical-align: bottom;
 }
 
- #apps a:hover {
-   border-radius: 50%;
-   background: #F2F2F2;
-   padding: 10px;
-
-
+#apps a:hover {
+  border-radius: 50%;
+  background: #F2F2F2;
+  padding: 10px;
 }
 
 .iniciar-sesion a {
@@ -105,18 +103,32 @@ img .main-image {
   height: auto;
 }
 
+.search-icon {
+  padding: 10px;
+  vertical-align: middle;
+  border-left: 1px solid lightgrey;
+  border-radius: 100px;
+}
+
 #main-content #search-bar {
   border-radius: 100px;
   width: 37em;
   height: 40px;
+  text-align: justify;
 }
 
 #search-bar:hover {
-  box-shadow: 0 0 9px rgba(33,33,33,.2);
+  box-shadow: 0 0 9px rgba(33, 33, 33, .2);
 }
 
 input {
   border: 1px solid lightgrey;
+}
+
+input:focus {
+  border: 1px solid lightgrey;
+  /*This removes the extra border appears when selected*/
+  outline: none;
 }
 
 .search-buttons {
