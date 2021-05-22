@@ -58,6 +58,7 @@ header {
 
 .nav-bar li:not(:last-child) a:hover {
   text-decoration: underline;
+
 }
 
 .nav-bar a {
@@ -86,6 +87,10 @@ header {
   color: #fff;
   padding: 0.6em 1.5em;
 }
+.iniciar-sesion a:hover{
+  box-shadow: 0 0px 2px grey;
+  opacity: 90%;
+}
 
 /*--------->Main<-----------*/
 main {
@@ -103,12 +108,11 @@ img .main-image {
   height: auto;
 }
 
-.search-icon {
+/* .search-icon {
   padding: 10px;
   vertical-align: middle;
-  border-left: 1px solid lightgrey;
-  border-radius: 100px;
-}
+
+} */
 
 #main-content #search-bar {
   border-radius: 100px;
@@ -163,6 +167,9 @@ footer a {
   padding: 0 2em 0 0;
 }
 
+footer a:hover{
+  text-decoration: underline;
+}
 footer .country {
   align-items: flex-start;
   display: flex;
