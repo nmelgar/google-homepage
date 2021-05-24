@@ -220,11 +220,18 @@ footer .about {
   #main-content #search-bar {
     width: 27em;
   }
+  .nav-bar ul li {
+    padding: 1%;
+  }
 }
 
 @media (max-width: 385px) {
   #main-content #search-bar {
     width: 25em;
+  }
+
+  .search-buttons {
+    flex-direction: column;
   }
 }
 
